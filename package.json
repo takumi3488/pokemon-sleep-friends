@@ -1,0 +1,17 @@
+{
+  "name": "pokemon-sleep-friends",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./src/index.ts --target=bun --outfile=./dist/index.js --minify",
+    "pretest": "docker build ../simple-kvs -t simple-kvs:pokemon-sleep-friends"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^2.1.5"
+  },
+  "dependencies": {
+    "@types/bun": "^1.1.13",
+    "playwright": "^1.48.2"
+  }
+}
