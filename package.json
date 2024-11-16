@@ -3,8 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "pretest": "docker build ../simple-kvs -t simple-kvs:pokemon-sleep-friends",
-    "playwright:install": "playwright install chromium --with-deps"
+    "pretest": "docker build ../simple-kvs -t simple-kvs:pokemon-sleep-friends"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
