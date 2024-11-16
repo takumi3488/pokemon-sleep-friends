@@ -3,8 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "build": "bun build ./src/index.ts --target=bun --outfile=./dist/index.js --minify",
-    "pretest": "docker build ../simple-kvs -t simple-kvs:pokemon-sleep-friends"
+    "pretest": "docker build ../simple-kvs -t simple-kvs:pokemon-sleep-friends",
+    "playwright:install": "playwright install chromium --with-deps"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
