@@ -1,15 +1,5 @@
 # pokemon-sleep-friends
 
-To install dependencies:
+`KVS_ENDPOINT`: simple-kvsのエンドポイント
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.31. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+メッセージやフレンドコードはハードコーディングしてある
