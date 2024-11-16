@@ -13,6 +13,7 @@ COPY --from=install /temp/prod/node_modules node_modules
 COPY src/index.ts .
 COPY src/kvs.ts .
 COPY package.json .
+RUN bunx --bun playwright install chromium --with-deps
 
 USER bun
 ENTRYPOINT [ "bun", "run", "index.ts" ]
